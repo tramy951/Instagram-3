@@ -109,11 +109,11 @@
                 </form>
             </article>
 
-            <!-- BÀI ĐĂNG 2: Lilmiquela 2 -->
+            <!-- BÀI ĐĂNG 2: Lilmiquela 2 (ĐÃ SỬA THÀNH CAROUSEL) -->
             <article class="border-b border-gray-800 pb-3 mt-1">
                 <div class="flex items-center justify-between p-3">
                     <div class="flex items-center space-x-3 cursor-pointer">
-                        <img src=".avatar.png" alt="Avatar" class="w-8 h-8 rounded-full object-cover border border-gray-800 bg-gray-800" onerror="this.src='https://ui-avatars.com/api/?name=Lil+Miquela&background=333&color=fff'" />
+                        <img src="avatar.png" alt="Avatar" class="w-8 h-8 rounded-full object-cover border border-gray-800 bg-gray-800" onerror="this.src='https://ui-avatars.com/api/?name=Lil+Miquela&background=333&color=fff'" />
                         <div class="flex flex-col">
                             <span class="font-semibold text-sm text-white">lilmiquela</span>
                             <span class="text-[11px] text-gray-400">Bali, Indonesia • Được tài trợ</span>
@@ -121,9 +121,18 @@
                     </div>
                     <button class="text-gray-400 font-bold">...</button>
                 </div>
-                <div class="w-full aspect-square relative bg-gray-900">
-                 <img src="lilmiquela 2.1.png" class="w-full h-full object-cover" alt="Bali" onerror="this.src='https://placehold.co/600x600/185/fff?text=Bali'" />
-                 <img src="lilmiquela 2.2.png" class="w-full h-full object-cover" alt="Bali" onerror="this.src='https://placehold.co/600x600/185/fff?text=Bali'" />
+                <!-- Cấu trúc Carousel mới cho Bài 2 -->
+                <div class="carousel-container relative w-full aspect-square overflow-hidden group bg-gray-900">
+                    <div class="carousel-track flex w-full h-full transition-transform duration-300 ease-in-out">
+                        <img src="lilmiquela 2.1.png" class="w-full h-full object-cover flex-shrink-0" alt="Bali 1" onerror="this.src='https://placehold.co/600x600/185/fff?text=Bali+1'" />
+                        <img src="lilmiquela 2.2.png" class="w-full h-full object-cover flex-shrink-0" alt="Bali 2" onerror="this.src='https://placehold.co/600x600/185/fff?text=Bali+2'" />
+                    </div>
+                    <button class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-out drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+                    <button class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-in drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+                    <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-1.5 dots-container">
+                        <div class="dot h-1.5 w-1.5 bg-blue-500 rounded-full transition-all"></div>
+                        <div class="dot h-1.5 w-1.5 bg-white/50 rounded-full transition-all"></div>
+                    </div>
                 </div>
                 <div class="px-3 pt-3">
                     <div class="flex items-center justify-between pb-2">
@@ -143,7 +152,7 @@
                 </form>
             </article>
 
-            <!-- BÀI ĐĂNG 3: Lilmiquela 3 -->
+            <!-- BÀI ĐĂNG 3: Lilmiquela 3 (ĐÃ SỬA DẤU CHẤM THÀNH 3) -->
             <article class="border-b border-gray-800 pb-3 mt-1">
                 <div class="flex items-center justify-between p-3">
                     <div class="flex items-center space-x-3 cursor-pointer">
@@ -164,9 +173,9 @@
                     </div>
                     <button class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-out drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
                     <button class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-in drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+                    <!-- Đã xoá dấu chấm thứ 4, chỉ để lại 3 dấu chấm -->
                     <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-1.5 dots-container">
                         <div class="dot h-1.5 w-1.5 bg-blue-500 rounded-full transition-all"></div>
-                        <div class="dot h-1.5 w-1.5 bg-white/50 rounded-full transition-all"></div>
                         <div class="dot h-1.5 w-1.5 bg-white/50 rounded-full transition-all"></div>
                         <div class="dot h-1.5 w-1.5 bg-white/50 rounded-full transition-all"></div>
                     </div>
@@ -203,7 +212,7 @@
                 </div>
                 
                 <!-- Video Container -->
-             <div class="w-full aspect-[9/16] relative bg-black flex justify-center items-center overflow-hidden">
+                <div class="w-full aspect-[9/16] relative bg-black flex justify-center items-center overflow-hidden">
                     <div class="w-full h-full pointer-events-none">
                         <iframe 
                             class="w-full h-full" 
@@ -316,7 +325,7 @@
                 </form>
             </article>
 
-            <!-- BÀI ĐĂNG 2: BALI -->
+            <!-- BÀI ĐĂNG 2: BALI (ĐÃ SỬA THÀNH CAROUSEL) -->
             <article class="border-b border-gray-800 pb-3 mt-1">
                 <div class="flex items-center justify-between p-3">
                     <div class="flex items-center space-x-3 cursor-pointer">
@@ -328,8 +337,18 @@
                     </div>
                     <button class="text-gray-400 font-bold">...</button>
                 </div>
-                <div class="w-full aspect-square relative bg-gray-900">
-                    <img src="./bali.png" class="w-full h-full object-cover" alt="Bali" onerror="this.src='https://placehold.co/600x600/185/fff?text=Bali'" />
+                <!-- Cấu trúc Carousel mới cho Bài 2 (Phone 2) -->
+                <div class="carousel-container relative w-full aspect-square overflow-hidden group bg-gray-900">
+                    <div class="carousel-track flex w-full h-full transition-transform duration-300 ease-in-out">
+                        <img src="./bali1.png" class="w-full h-full object-cover flex-shrink-0" alt="Bali 1" onerror="this.src='https://placehold.co/600x600/185/fff?text=Bali+1'" />
+                        <img src="./bali2.png" class="w-full h-full object-cover flex-shrink-0" alt="Bali 2" onerror="this.src='https://placehold.co/600x600/185/fff?text=Bali+2'" />
+                    </div>
+                    <button class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-out drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+                    <button class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-in drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+                    <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-1.5 dots-container">
+                        <div class="dot h-1.5 w-1.5 bg-blue-500 rounded-full transition-all"></div>
+                        <div class="dot h-1.5 w-1.5 bg-white/50 rounded-full transition-all"></div>
+                    </div>
                 </div>
                 <div class="px-3 pt-3">
                     <div class="flex items-center justify-between pb-2">
@@ -349,7 +368,7 @@
                 </form>
             </article>
 
-            <!-- BÀI ĐĂNG 3: PARIS -->
+            <!-- BÀI ĐĂNG 3: PARIS (ĐÃ SỬA THÀNH 3 ẢNH & 3 DẤU CHẤM) -->
             <article class="border-b border-gray-800 pb-3 mt-1">
                 <div class="flex items-center justify-between p-3">
                     <div class="flex items-center space-x-3 cursor-pointer">
@@ -365,14 +384,14 @@
                     <div class="carousel-track flex w-full h-full transition-transform duration-300 ease-in-out">
                         <img src="./paris1.png" class="w-full h-full object-cover flex-shrink-0" alt="Paris 1" onerror="this.src='https://placehold.co/600x600/1e3a8a/fff?text=Paris+1'" />
                         <img src="./paris2.png" class="w-full h-full object-cover flex-shrink-0" alt="Paris 2" onerror="this.src='https://placehold.co/600x600/7f1d1d/fff?text=Paris+2'" />
+                        <!-- Xóa ảnh 4, chỉ để lại ảnh 3 -->
                         <img src="./paris3.png" class="w-full h-full object-cover flex-shrink-0" alt="Paris 3" onerror="this.src='https://placehold.co/600x600/4c1d95/fff?text=Paris+3'" />
-                        <img src="./paris4.png" class="w-full h-full object-cover flex-shrink-0" alt="Paris 4" onerror="this.src='https://placehold.co/600x600/713f12/fff?text=Paris+4'" />
                     </div>
                     <button class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-out drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
                     <button class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-in drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+                    <!-- Xóa dấu chấm 4, chỉ để 3 dấu -->
                     <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-1.5 dots-container">
                         <div class="dot h-1.5 w-1.5 bg-blue-500 rounded-full transition-all"></div>
-                        <div class="dot h-1.5 w-1.5 bg-white/50 rounded-full transition-all"></div>
                         <div class="dot h-1.5 w-1.5 bg-white/50 rounded-full transition-all"></div>
                         <div class="dot h-1.5 w-1.5 bg-white/50 rounded-full transition-all"></div>
                     </div>
