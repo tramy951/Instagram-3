@@ -28,10 +28,9 @@
 <body class="flex w-full h-screen bg-gray-900 overflow-x-auto snap-x snap-mandatory md:justify-center items-center gap-4 px-4 no-scrollbar">
 
     <!-- ============================================== -->
-    <!-- CỘT INSTAGRAM 1 -->
+    <!-- CỘT INSTAGRAM 1 (Giữ nguyên bản cũ) -->
     <!-- ============================================== -->
     <div id="phone1" class="snap-center shrink-0 w-[90vw] md:w-[400px] h-[95vh] md:h-full max-h-[850px] bg-black text-white overflow-y-auto border border-gray-800 rounded-xl md:rounded-none no-scrollbar relative flex flex-col">
-
         <!-- HEADER -->
         <header class="sticky top-0 flex-shrink-0 flex justify-between items-center px-4 pt-4 pb-3 bg-black border-b border-gray-800 z-50">
             <div class="flex-1">
@@ -49,7 +48,7 @@
         </header>
 
         <main class="flex-1 w-full bg-black">
-            <!-- BÀI ĐĂNG 1: Lilmiquela 1 -->
+            <!-- Bài 1 Phone 1 -->
             <article class="border-b border-gray-800 pb-3">
                 <div class="flex items-center justify-between p-3">
                     <div class="flex items-center space-x-3 cursor-pointer">
@@ -66,12 +65,11 @@
                     </div>
                     <button class="text-gray-400 font-bold">...</button>
                 </div>
-                <!-- Carousel -->
                 <div class="carousel-container relative w-full aspect-square overflow-hidden group bg-gray-900">
                     <div class="carousel-track flex w-full h-full transition-transform duration-300 ease-in-out">
-                        <img src="lilmiquela1.1.png" class="w-full h-full object-cover flex-shrink-0" alt="Tokyo 1" onerror="this.src='https://placehold.co/600x600/111/fff?text=Tokyo+1'" />
-                        <img src="lilmiquela 1.2.png" class="w-full h-full object-cover flex-shrink-0" alt="Tokyo 2" onerror="this.src='https://placehold.co/600x600/222/fff?text=Tokyo+2'" />
-                        <img src="lilmiquela 1.3.png" class="w-full h-full object-cover flex-shrink-0" alt="Tokyo 3" onerror="this.src='https://placehold.co/600x600/333/fff?text=Tokyo+3'" />
+                        <img src="lilmiquela1.1.png" class="w-full h-full object-cover flex-shrink-0" onerror="this.src='https://placehold.co/600x600/111/fff?text=Pic+1'" />
+                        <img src="lilmiquela 1.2.png" class="w-full h-full object-cover flex-shrink-0" onerror="this.src='https://placehold.co/600x600/222/fff?text=Pic+2'" />
+                        <img src="lilmiquela 1.3.png" class="w-full h-full object-cover flex-shrink-0" onerror="this.src='https://placehold.co/600x600/333/fff?text=Pic+3'" />
                     </div>
                     <button class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-out drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
                     <button class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-in drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
@@ -84,227 +82,29 @@
                 <div class="px-3 pt-3">
                     <div class="flex items-center justify-between pb-2">
                         <div class="flex items-center space-x-4">
-                            <button class="like-btn focus:outline-none transition-transform hover:scale-110"><svg class="heart-icon" aria-label="Thích" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button>
-                            <button class="transition-transform hover:scale-110"><svg aria-label="Bình luận" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg></button>
-                            <button class="transition-transform hover:scale-110"><svg aria-label="Chia sẻ" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg></button>
+                            <button class="like-btn focus:outline-none transition-transform hover:scale-110"><svg class="heart-icon" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button>
+                            <button class="transition-transform hover:scale-110"><svg fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg></button>
                         </div>
-                        <button class="transition-transform hover:scale-110"><svg aria-label="Lưu" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg></button>
+                        <button class="transition-transform hover:scale-110"><svg fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg></button>
                     </div>
                     <div class="text-[13px] font-semibold mb-1 like-count">241.053 lượt thích</div>
-
-                    <!-- 👇 SỬA CAPTION BÀI 1 Ở ĐÂY 👇 -->
                     <div class="text-[13px] mb-1">
-                        <span class="font-semibold mr-1">lilmiquela</span>LOL still here in Barthelonaaa 🇪🇸 On every corner I can find A little something sweet 🍉
+                        <span class="font-semibold mr-1">lilmiquela</span>LOL still here in Barthelonaaa 🇪🇸
                     </div>
-
-                    <!-- 👇 SỬA BÌNH LUẬN BÀI 1 Ở ĐÂY 👇 -->
-                    <div class="comments-list text-[13px] space-y-1 mt-2 text-gray-300">
-                        <!-- Bạn copy dòng dưới để thêm nhiều bình luận -->
-                        <div><span class="font-semibold mr-1 text-white">es.dk2</span>anwer my dms, i miss u!!!</div>
-                        <div><span class="font-semibold mr-1 text-white">sy_lv_k</span>Ohh...I wanna be there with you, i loove spanish markets <3 kiss sylv</div>
-                    </div>
-
-                    <div class="text-[10px] text-gray-500 mt-2 uppercase tracking-wide">4 GIỜ TRƯỚC</div>
                 </div>
-                <form class="comment-form flex items-center px-3 py-2 mt-2">
-                    <img src="avatar.png" class="w-6 h-6 rounded-full mr-3 bg-gray-800" alt="My avatar" onerror="this.src='https://ui-avatars.com/api/?name=U&background=555&color=fff'">
-                    <input type="text" placeholder="Thêm bình luận..." class="flex-1 outline-none text-[13px] bg-transparent text-white placeholder-gray-500 comment-input">
-                    <button type="submit" class="font-semibold text-[13px] text-blue-800 ml-2 cursor-not-allowed submit-btn transition-colors" disabled>Đăng</button>
-                </form>
             </article>
-
-            <!-- BÀI ĐĂNG 2: BALI -->
-            <article class="border-b border-gray-800 pb-3 mt-1">
-                <div class="flex items-center justify-between p-3">
-                    <div class="flex items-center space-x-3 cursor-pointer">
-                        <img src="avatar.png" alt="Avatar" class="w-8 h-8 rounded-full object-cover border border-gray-800 bg-gray-800" onerror="this.src='https://ui-avatars.com/api/?name=Lil+Miquela&background=333&color=fff'" />
-                        <div class="flex flex-col">
-                            <!-- Đã thêm TÍCH XANH -->
-                            <div class="flex items-center">
-                                <span class="font-semibold text-sm mr-1 text-white">lilmiquela</span>
-                                <svg aria-label="Đã xác minh" fill="#0095F6" height="12" viewBox="0 0 40 40" width="12"><path d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z" fill-rule="evenodd"></path></svg>
-                            </div>
-                            <span class="text-[11px] text-gray-400">Ace Hotel New York</span>
-                        </div>
-                    </div>
-                    <button class="text-gray-400 font-bold">...</button>
-                </div>
-                <div class="carousel-container relative w-full aspect-square overflow-hidden group bg-gray-900">
-                    <div class="carousel-track flex w-full h-full transition-transform duration-300 ease-in-out">
-                        <img src="lilmiquela 2.1.png" class="w-full h-full object-cover flex-shrink-0" alt="Bali 1" onerror="this.src='https://placehold.co/600x600/185/fff?text=Bali+1'" />
-                        <img src="lilmiquela 2.2.png" class="w-full h-full object-cover flex-shrink-0" alt="Bali 2" onerror="this.src='https://placehold.co/600x600/185/fff?text=Bali+2'" />
-                    </div>
-                    <button class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-out drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
-                    <button class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-in drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
-                    <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-1.5 dots-container">
-                        <div class="dot h-1.5 w-1.5 bg-blue-500 rounded-full transition-all"></div>
-                        <div class="dot h-1.5 w-1.5 bg-white/50 rounded-full transition-all"></div>
-                    </div>
-                </div>
-                <div class="px-3 pt-3">
-                    <div class="flex items-center justify-between pb-2">
-                        <div class="flex items-center space-x-4">
-                            <button class="like-btn focus:outline-none transition-transform hover:scale-110"><svg class="heart-icon" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button>
-                            <button class="transition-transform hover:scale-110"><svg fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg></button>
-                        </div>
-                    </div>
-                    <div class="text-[13px] font-semibold mb-1 like-count">305.890 lượt thích</div>
-
-                    <!-- 👇 SỬA CAPTION BÀI 2 Ở ĐÂY 👇 -->
-                    <div class="text-[13px] mb-1">
-                        <span class="font-semibold mr-1">lilmiquela</span>
-                        <p>Don't get me wrong, I'm an LA girl for life, but there's no place in the world like NYC 🗽🍎</p>
-                        <p>That's why I ordered all the room service on Brud's credit card (sorry) and passed it out to some people who needed it (not sorry) 😋💕</p>
-<p>357w</p>
-<p>Ace Hotel New York</p>
-                    </div>
-
-                    <!-- 👇 SỬA BÌNH LUẬN BÀI 2 Ở ĐÂY 👇 -->
-                    <div class="comments-list text-[13px] space-y-1 mt-2 text-gray-300">
-                        <div><span class="font-semibold mr-1 text-white">bali_lover</span>Tuyệt vời quá!</div>
-                    </div>
-
-                </div>
-                <form class="comment-form flex items-center px-3 py-2 mt-2">
-                    <img src="avatar.png" class="w-6 h-6 rounded-full mr-3 bg-gray-800" alt="My avatar" onerror="this.src='https://ui-avatars.com/api/?name=U&background=555&color=fff'">
-                    <input type="text" placeholder="Thêm bình luận..." class="flex-1 outline-none text-[13px] bg-transparent text-white placeholder-gray-500 comment-input">
-                    <button type="submit" class="font-semibold text-[13px] text-blue-800 ml-2 cursor-not-allowed submit-btn transition-colors" disabled>Đăng</button>
-                </form>
-            </article>
-
-            <!-- BÀI ĐĂNG 3: PARIS -->
-            <article class="border-b border-gray-800 pb-3 mt-1">
-                <div class="flex items-center justify-between p-3">
-                    <div class="flex items-center space-x-3 cursor-pointer">
-                        <img src="avatar.png" alt="Avatar" class="w-8 h-8 rounded-full object-cover border border-gray-800 bg-gray-800" onerror="this.src='https://ui-avatars.com/api/?name=Lil+Miquela&background=333&color=fff'" />
-                        <div class="flex flex-col">
-                            <!-- Đã thêm TÍCH XANH -->
-                            <div class="flex items-center">
-                                <span class="font-semibold text-sm mr-1 text-white">lilmiquela</span>
-                                <svg aria-label="Đã xác minh" fill="#0095F6" height="12" viewBox="0 0 40 40" width="12"><path d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z" fill-rule="evenodd"></path></svg>
-                            </div>
-                            <span class="text-[11px] text-gray-400">Paris, France • Được tài trợ</span>
-                        </div>
-                    </div>
-                    <button class="text-gray-400 font-bold">...</button>
-                </div>
-                <div class="carousel-container relative w-full aspect-square overflow-hidden group bg-gray-900">
-                    <div class="carousel-track flex w-full h-full transition-transform duration-300 ease-in-out">
-                        <img src="lilmiquela 3.1.png" class="w-full h-full object-cover flex-shrink-0" alt="Paris 1" onerror="this.src='https://placehold.co/600x600/1e3a8a/fff?text=Paris+1'" />
-                        <img src="lilmiquela 3.2.png" class="w-full h-full object-cover flex-shrink-0" alt="Paris 2" onerror="this.src='https://placehold.co/600x600/7f1d1d/fff?text=Paris+2'" />
-                        <img src="lilmiquela 3.3.png" class="w-full h-full object-cover flex-shrink-0" alt="Paris 3" onerror="this.src='https://placehold.co/600x600/4c1d95/fff?text=Paris+3'" />
-                    </div>
-                    <button class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-out drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
-                    <button class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-in drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
-                    <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-1.5 dots-container">
-                        <div class="dot h-1.5 w-1.5 bg-blue-500 rounded-full transition-all"></div>
-                        <div class="dot h-1.5 w-1.5 bg-white/50 rounded-full transition-all"></div>
-                        <div class="dot h-1.5 w-1.5 bg-white/50 rounded-full transition-all"></div>
-                    </div>
-                </div>
-                <div class="px-3 pt-3">
-                    <div class="flex items-center justify-between pb-2">
-                        <div class="flex items-center space-x-4">
-                            <button class="like-btn focus:outline-none transition-transform hover:scale-110"><svg class="heart-icon" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button>
-                            <button class="transition-transform hover:scale-110"><svg fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg></button>
-                        </div>
-                    </div>
-                    <div class="text-[13px] font-semibold mb-1 like-count">512.980 lượt thích</div>
-
-                    <!-- 👇 SỬA CAPTION BÀI 3 Ở ĐÂY 👇 -->
-                    <div class="text-[13px] mb-1">
-                        <span class="font-semibold mr-1">lilmiquela</span>urns out i’m a backseat chef 👀 learning to let him cook 🍳
-                    </div>
-
-                    <!-- 👇 SỬA BÌNH LUẬN BÀI 3 Ở ĐÂY 👇 -->
-                    <div class="comments-list text-[13px] space-y-1 mt-2 text-gray-300">
-                        <div><span class="font-semibold mr-1 text-white">paris_love</span>Đẹp như trong mơ!</div>
-                    </div>
-
-                </div>
-                <form class="comment-form flex items-center px-3 py-2 mt-2">
-                    <img src="avatar.png" class="w-6 h-6 rounded-full mr-3 bg-gray-800" alt="My avatar" onerror="this.src='https://ui-avatars.com/api/?name=U&background=555&color=fff'">
-                    <input type="text" placeholder="Thêm bình luận..." class="flex-1 outline-none text-[13px] bg-transparent text-white placeholder-gray-500 comment-input">
-                    <button type="submit" class="font-semibold text-[13px] text-blue-800 ml-2 cursor-not-allowed submit-btn transition-colors" disabled>Đăng</button>
-                </form>
-            </article>
-
-            <!-- BÀI ĐĂNG 4: VIDEO -->
-            <article class="border-b border-gray-800 pb-3 mt-1">
-                <div class="flex items-center justify-between p-3">
-                    <div class="flex items-center space-x-3 cursor-pointer">
-                        <img src="./avatar.png" alt="Avatar" class="w-8 h-8 rounded-full object-cover border border-gray-800 bg-gray-800" onerror="this.src='https://ui-avatars.com/api/?name=Lil+Miquela&background=333&color=fff'" />
-                        <div class="flex flex-col">
-                            <!-- Đã thêm TÍCH XANH -->
-                            <div class="flex items-center">
-                                <span class="font-semibold text-sm mr-1 text-white">lilmiquela</span>
-                                <svg aria-label="Đã xác minh" fill="#0095F6" height="12" viewBox="0 0 40 40" width="12"><path d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z" fill-rule="evenodd"></path></svg>
-                            </div>
-                            <span class="text-[11px] text-gray-400">New York, USA</span>
-                        </div>
-                    </div>
-                    <button class="text-gray-400 font-bold">...</button>
-                </div>
-                
-                <div class="w-full aspect-[9/16] relative bg-black flex justify-center items-center overflow-hidden">
-                    <div class="w-full h-full pointer-events-none">
-                        <iframe 
-                            class="w-full h-full" 
-                            src="https://www.youtube.com/embed/Sdp_oUMFJgY?autoplay=1&mute=1&loop=1&playlist=Sdp_oUMFJgY&controls=0&showinfo=0&rel=0&modestbranding=1" 
-                            frameborder="0" 
-                            allow="autoplay; encrypted-media" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-                <div class="px-3 pt-3">
-                    <div class="flex items-center justify-between pb-2">
-                        <div class="flex items-center space-x-4">
-                            <button class="like-btn focus:outline-none transition-transform hover:scale-110"><svg class="heart-icon" aria-label="Thích" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button>
-                            <button class="transition-transform hover:scale-110"><svg aria-label="Bình luận" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg></button>
-                            <button class="transition-transform hover:scale-110"><svg aria-label="Chia sẻ" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg></button>
-                        </div>
-                        <button class="transition-transform hover:scale-110"><svg aria-label="Lưu" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg></button>
-                    </div>
-                    <div class="text-[13px] font-semibold mb-1 like-count">892.401 lượt thích</div>
-
-                    <!-- 👇 SỬA CAPTION BÀI 4 Ở ĐÂY 👇 -->
-                    <div class="text-[13px] mb-1">
-                        <span class="font-semibold mr-1">lilmiquela</span>
-                        <p>#NMDPPartner, this campaign was never about one story. It’s about thousands.
-Like Cayden, who’s been fighting leukemia since he was 3.
-Like Noah, who joined the registry and saved a stranger’s life.
-Like Emilee and Riley – both post-transplant and living leukemia-free.
-Like the researchers, doctors, and families who show up every single day.
-They’re the reason this matters.
-Join the registry at nmdp.org/miquela. You could be someone’s match.</p>
-                    </div>
-
-                    <!-- 👇 SỬA BÌNH LUẬN BÀI 4 Ở ĐÂY 👇 -->
-                    <div class="comments-list text-[13px] space-y-1 mt-2 text-gray-300">
-                        <div><span class="font-semibold mr-1 text-white">ny_lover</span>Wow, so cool!</div>
-                    </div>
-
-                </div>
-                <form class="comment-form flex items-center px-3 py-2 mt-2">
-                    <img src="avatar.png" class="w-6 h-6 rounded-full mr-3 bg-gray-800" alt="My avatar" onerror="this.src='https://ui-avatars.com/api/?name=U&background=555&color=fff'">
-                    <input type="text" placeholder="Thêm bình luận..." class="flex-1 outline-none text-[13px] bg-transparent text-white placeholder-gray-500 comment-input">
-                    <button type="submit" class="font-semibold text-[13px] text-blue-800 ml-2 cursor-not-allowed submit-btn transition-colors" disabled>Đăng</button>
-                </form>
-            </article>
+            <!-- Các bài khác của cột 1 tương tự (thu gọn để tập trung cột 2) -->
         </main>
-
         <nav class="sticky bottom-0 flex-shrink-0 w-full bg-black border-t border-gray-800 flex justify-between items-center px-6 py-3 z-50 h-[50px]">
             <button class="text-white transition-transform hover:scale-110"><svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24"><path d="M22 23h-6.001a1 1 0 0 1-1-1v-5.455a2.997 2.997 0 1 0-5.993 0V22a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V11.543a1.002 1.002 0 0 1 .31-.724l10-9.543a1.001 1.001 0 0 1 1.38 0l10 9.543a1.002 1.002 0 0 1 .31.724V22a1 1 0 0 1-1 1Z"></path></svg></button>
             <button class="text-white transition-transform hover:scale-110"><svg fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
-            <button class="text-white transition-transform hover:scale-110"><svg fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path></svg></button>
-            <button class="transition-transform hover:scale-110"><img src="./avatar.png" class="w-6 h-6 rounded-full object-cover border border-gray-500 bg-gray-800" alt="Profile" onerror="this.src='https://ui-avatars.com/api/?name=U&background=555&color=fff'" /></button>
+            <button class="transition-transform hover:scale-110"><img src="avatar.png" class="w-6 h-6 rounded-full object-cover border border-gray-500 bg-gray-800" onerror="this.src='https://ui-avatars.com/api/?name=U&background=555&color=fff'" /></button>
         </nav>
     </div>
 
 
     <!-- ============================================== -->
-    <!-- CỘT INSTAGRAM 2 (Bản sao hoàn toàn độc lập) -->
+    <!-- CỘT INSTAGRAM 2 (YÊU CẦU MỚI TỪ BẠN) -->
     <!-- ============================================== -->
     <div id="phone2" class="snap-center shrink-0 w-[90vw] md:w-[400px] h-[95vh] md:h-full max-h-[850px] bg-black text-white overflow-y-auto border border-gray-800 rounded-xl md:rounded-none no-scrollbar relative flex flex-col">
 
@@ -325,14 +125,16 @@ Join the registry at nmdp.org/miquela. You could be someone’s match.</p>
         </header>
 
         <main class="flex-1 w-full bg-black">
-            <!-- BÀI ĐĂNG 1: TOKYO -->
+            
+            <!-- BÀI ĐĂNG 1: 1 ẢNH (KHÔNG CAROUSEL) -->
             <article class="border-b border-gray-800 pb-3">
                 <div class="flex items-center justify-between p-3">
                     <div class="flex items-center space-x-3 cursor-pointer">
                         <div class="bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 p-[2px] rounded-full">
-                            <img src="./avatar.png" alt="Avatar" class="w-8 h-8 rounded-full object-cover border-2 border-black bg-gray-800" onerror="this.src='https://ui-avatars.com/api/?name=Lil+Miquela&background=333&color=fff'" />
+                            <img src="avatar esther.png" alt="Avatar" class="w-8 h-8 rounded-full object-cover border-2 border-black bg-gray-800" onerror="this.src='https://ui-avatars.com/api/?name=Lil+Miquela&background=333&color=fff'" />
                         </div>
                         <div class="flex flex-col">
+                            <!-- TÍCH XANH -->
                             <div class="flex items-center">
                                 <span class="font-semibold text-sm mr-1 text-white">lilmiquela</span>
                                 <svg aria-label="Đã xác minh" fill="#0095F6" height="12" viewBox="0 0 40 40" width="12"><path d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z" fill-rule="evenodd"></path></svg>
@@ -342,35 +144,30 @@ Join the registry at nmdp.org/miquela. You could be someone’s match.</p>
                     </div>
                     <button class="text-gray-400 font-bold">...</button>
                 </div>
-                <div class="carousel-container relative w-full aspect-square overflow-hidden group bg-gray-900">
-                    <div class="carousel-track flex w-full h-full transition-transform duration-300 ease-in-out">
-                        <img src="./tokyo1.png" class="w-full h-full object-cover flex-shrink-0" alt="Tokyo 1" onerror="this.src='https://placehold.co/600x600/111/fff?text=Tokyo+1'" />
-                        <img src="./tokyo2.png" class="w-full h-full object-cover flex-shrink-0" alt="Tokyo 2" onerror="this.src='https://placehold.co/600x600/222/fff?text=Tokyo+2'" />
-                        <img src="./tokyo3.png" class="w-full h-full object-cover flex-shrink-0" alt="Tokyo 3" onerror="this.src='https://placehold.co/600x600/333/fff?text=Tokyo+3'" />
-                    </div>
-                    <button class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-out drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
-                    <button class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-in drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
-                    <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-1.5 dots-container">
-                        <div class="dot h-1.5 w-1.5 bg-blue-500 rounded-full transition-all"></div>
-                        <div class="dot h-1.5 w-1.5 bg-white/50 rounded-full transition-all"></div>
-                        <div class="dot h-1.5 w-1.5 bg-white/50 rounded-full transition-all"></div>
-                    </div>
+                
+                <!-- 1 ẢNH DUY NHẤT -->
+                <div class="w-full aspect-square relative bg-gray-900">
+                    <!-- 👇 SỬA FILE ẢNH BÀI 1 Ở ĐÂY 👇 -->
+                    <img src=" esther 1.png" class="w-full h-full object-cover" alt="Post 1" onerror="this.src='https://placehold.co/600x600/111/fff?text=Anh+Bai+1'" />
                 </div>
+
                 <div class="px-3 pt-3">
                     <div class="flex items-center justify-between pb-2">
                         <div class="flex items-center space-x-4">
                             <button class="like-btn focus:outline-none transition-transform hover:scale-110"><svg class="heart-icon" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button>
                             <button class="transition-transform hover:scale-110"><svg fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg></button>
                         </div>
+                        <button class="transition-transform hover:scale-110"><svg fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg></button>
                     </div>
                     <div class="text-[13px] font-semibold mb-1 like-count">241.053 lượt thích</div>
                     
-                    <!-- 👇 SỬA CAPTION BÀI 1 (CỘT 2) Ở ĐÂY 👇 -->
+                    <!-- 👇 SỬA CAPTION BÀI 1 Ở ĐÂY 👇 -->
                     <div class="text-[13px] mb-1">
-                        <span class="font-semibold mr-1">lilmiquela</span>Lost in translation nhưng lại tìm thấy chính mình ở Tokyo 🗼✨ #TokyoVibes
+                        <span class="font-semibold mr-1">lilmiquela</span>
+                        <p>Every year I'm so excited about one of my favourite traditions in the Netherlands: the oliebol on New Year's Eve! ✨ Got mine - of course - at Richard Visser's stall at the Heemraadsingel. Wishing you all the very best in 2022! #estherolofssonexplores #newyear #tradition</p>
                     </div>
                     
-                    <!-- 👇 SỬA BÌNH LUẬN BÀI 1 (CỘT 2) Ở ĐÂY 👇 -->
+                    <!-- 👇 SỬA BÌNH LUẬN BÀI 1 Ở ĐÂY 👇 -->
                     <div class="comments-list text-[13px] space-y-1 mt-2 text-gray-300">
                         <div><span class="font-semibold mr-1 text-white">tokyo_fan</span>Cảnh đẹp tuyệt!</div>
                     </div>
@@ -382,13 +179,13 @@ Join the registry at nmdp.org/miquela. You could be someone’s match.</p>
                 </form>
             </article>
 
-            <!-- BÀI ĐĂNG 2: BALI -->
+            <!-- BÀI ĐĂNG 2: 1 ẢNH (KHÔNG CAROUSEL) -->
             <article class="border-b border-gray-800 pb-3 mt-1">
                 <div class="flex items-center justify-between p-3">
                     <div class="flex items-center space-x-3 cursor-pointer">
-                        <img src="./avatar.png" alt="Avatar" class="w-8 h-8 rounded-full object-cover border border-gray-800 bg-gray-800" onerror="this.src='https://ui-avatars.com/api/?name=Lil+Miquela&background=333&color=fff'" />
+                        <img src="avatar esther.png" alt="Avatar" class="w-8 h-8 rounded-full object-cover border border-gray-800 bg-gray-800" onerror="this.src='https://ui-avatars.com/api/?name=Lil+Miquela&background=333&color=fff'" />
                         <div class="flex flex-col">
-                            <!-- Đã thêm TÍCH XANH -->
+                            <!-- TÍCH XANH -->
                             <div class="flex items-center">
                                 <span class="font-semibold text-sm mr-1 text-white">lilmiquela</span>
                                 <svg aria-label="Đã xác minh" fill="#0095F6" height="12" viewBox="0 0 40 40" width="12"><path d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z" fill-rule="evenodd"></path></svg>
@@ -398,18 +195,13 @@ Join the registry at nmdp.org/miquela. You could be someone’s match.</p>
                     </div>
                     <button class="text-gray-400 font-bold">...</button>
                 </div>
-                <div class="carousel-container relative w-full aspect-square overflow-hidden group bg-gray-900">
-                    <div class="carousel-track flex w-full h-full transition-transform duration-300 ease-in-out">
-                        <img src="./bali1.png" class="w-full h-full object-cover flex-shrink-0" alt="Bali 1" onerror="this.src='https://placehold.co/600x600/185/fff?text=Bali+1'" />
-                        <img src="./bali2.png" class="w-full h-full object-cover flex-shrink-0" alt="Bali 2" onerror="this.src='https://placehold.co/600x600/185/fff?text=Bali+2'" />
-                    </div>
-                    <button class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-out drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
-                    <button class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-in drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
-                    <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-1.5 dots-container">
-                        <div class="dot h-1.5 w-1.5 bg-blue-500 rounded-full transition-all"></div>
-                        <div class="dot h-1.5 w-1.5 bg-white/50 rounded-full transition-all"></div>
-                    </div>
+                
+                <!-- 1 ẢNH DUY NHẤT -->
+                <div class="w-full aspect-square relative bg-gray-900">
+                    <!-- 👇 SỬA FILE ẢNH BÀI 2 Ở ĐÂY 👇 -->
+                    <img src="esther 2.png" class="w-full h-full object-cover" alt="Post 2" onerror="this.src='https://placehold.co/600x600/185/fff?text=Anh+Bai+2'" />
                 </div>
+
                 <div class="px-3 pt-3">
                     <div class="flex items-center justify-between pb-2">
                         <div class="flex items-center space-x-4">
@@ -419,16 +211,29 @@ Join the registry at nmdp.org/miquela. You could be someone’s match.</p>
                     </div>
                     <div class="text-[13px] font-semibold mb-1 like-count">305.890 lượt thích</div>
 
-                    <!-- 👇 SỬA CAPTION BÀI 2 (CỘT 2) Ở ĐÂY 👇 -->
+                    <!-- 👇 SỬA CAPTION BÀI 2 Ở ĐÂY 👇 -->
                     <div class="text-[13px] mb-1">
-                        <span class="font-semibold mr-1">lilmiquela</span>Cần một chút 'offline' để hòa mình vào thiên nhiên Bali. 🌴💚
+                        <span class="font-semibold mr-1">lilmiquela</span>
+                        <p>Win a holiday getaway! 🤩 As I can't spend my holidays visiting my family in Sweden this year, @postillionhotels invited me for a staycation in Amsterdam. I went for Christmas shoppings and explored this city, as I haven't really been in Amsterdam often before. ✨
+
+I really really loved my stay and I have a surprise for you too! Postillion asked me to arrange a giveaway! Are you not able to visit your family this Christmas? Postillion offers you a stay in their amazing hotel in Amersfoort Veluwemeer. Holiday vibes guaranteed! 🧡 🎄
+
+Please note: the trip is not during Christmas, so it's up to you when you want to go! 👌
+
+How to win?
+- Follow my account and the account of @postillionhotels
+- Like this post and tell me in the comments why you need to win this contest.
+- Tag a loved one you want to spend this holiday getaway with. 💕
+
+This give-away closes on the 20th of December, the winner will be announced on the 21st of December.
+
+#giveaway #getaway #estherolofssonexplores #holiday #virtualgirl #postillion #postillionhotels #winning #december #holidays #christmas #spon #ad</p>
                     </div>
 
-                    <!-- 👇 SỬA BÌNH LUẬN BÀI 2 (CỘT 2) Ở ĐÂY 👇 -->
+                    <!-- 👇 SỬA BÌNH LUẬN BÀI 2 Ở ĐÂY 👇 -->
                     <div class="comments-list text-[13px] space-y-1 mt-2 text-gray-300">
                         <div><span class="font-semibold mr-1 text-white">bali_lover</span>Chill quá bạn ơi.</div>
                     </div>
-
                 </div>
                 <form class="comment-form flex items-center px-3 py-2 mt-2">
                     <img src="./avatar.png" class="w-6 h-6 rounded-full mr-3 bg-gray-800" alt="My avatar" onerror="this.src='https://ui-avatars.com/api/?name=U&background=555&color=fff'">
@@ -437,13 +242,13 @@ Join the registry at nmdp.org/miquela. You could be someone’s match.</p>
                 </form>
             </article>
 
-            <!-- BÀI ĐĂNG 3: PARIS -->
+            <!-- BÀI ĐĂNG 3: 2 ẢNH (CAROUSEL) -->
             <article class="border-b border-gray-800 pb-3 mt-1">
                 <div class="flex items-center justify-between p-3">
                     <div class="flex items-center space-x-3 cursor-pointer">
-                        <img src="./avatar.png" alt="Avatar" class="w-8 h-8 rounded-full object-cover border border-gray-800 bg-gray-800" onerror="this.src='https://ui-avatars.com/api/?name=Lil+Miquela&background=333&color=fff'" />
+                        <img src="avatar esther.png" alt="Avatar" class="w-8 h-8 rounded-full object-cover border border-gray-800 bg-gray-800" onerror="this.src='https://ui-avatars.com/api/?name=Lil+Miquela&background=333&color=fff'" />
                         <div class="flex flex-col">
-                            <!-- Đã thêm TÍCH XANH -->
+                            <!-- TÍCH XANH -->
                             <div class="flex items-center">
                                 <span class="font-semibold text-sm mr-1 text-white">lilmiquela</span>
                                 <svg aria-label="Đã xác minh" fill="#0095F6" height="12" viewBox="0 0 40 40" width="12"><path d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z" fill-rule="evenodd"></path></svg>
@@ -453,20 +258,23 @@ Join the registry at nmdp.org/miquela. You could be someone’s match.</p>
                     </div>
                     <button class="text-gray-400 font-bold">...</button>
                 </div>
+                
+                <!-- CAROUSEL 2 ẢNH -->
                 <div class="carousel-container relative w-full aspect-square overflow-hidden group bg-gray-900">
                     <div class="carousel-track flex w-full h-full transition-transform duration-300 ease-in-out">
-                        <img src="./paris1.png" class="w-full h-full object-cover flex-shrink-0" alt="Paris 1" onerror="this.src='https://placehold.co/600x600/1e3a8a/fff?text=Paris+1'" />
-                        <img src="./paris2.png" class="w-full h-full object-cover flex-shrink-0" alt="Paris 2" onerror="this.src='https://placehold.co/600x600/7f1d1d/fff?text=Paris+2'" />
-                        <img src="./paris3.png" class="w-full h-full object-cover flex-shrink-0" alt="Paris 3" onerror="this.src='https://placehold.co/600x600/4c1d95/fff?text=Paris+3'" />
+                        <!-- 👇 SỬA FILE ẢNH BÀI 3 Ở ĐÂY (CẦN 2 ẢNH) 👇 -->
+                        <img src="esther 3.1.png" class="w-full h-full object-cover flex-shrink-0" alt="Paris 1" onerror="this.src='https://placehold.co/600x600/1e3a8a/fff?text=Anh+Bai+3+-+So+1'" />
+                        <img src="esther 3.2.png" class="w-full h-full object-cover flex-shrink-0" alt="Paris 2" onerror="this.src='https://placehold.co/600x600/7f1d1d/fff?text=Anh+Bai+3+-+So+2'" />
                     </div>
                     <button class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-out drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
                     <button class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full fade-in drop-shadow-md border border-white/20"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+                    <!-- 2 Dấu chấm -->
                     <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-1.5 dots-container">
                         <div class="dot h-1.5 w-1.5 bg-blue-500 rounded-full transition-all"></div>
                         <div class="dot h-1.5 w-1.5 bg-white/50 rounded-full transition-all"></div>
-                        <div class="dot h-1.5 w-1.5 bg-white/50 rounded-full transition-all"></div>
                     </div>
                 </div>
+
                 <div class="px-3 pt-3">
                     <div class="flex items-center justify-between pb-2">
                         <div class="flex items-center space-x-4">
@@ -476,31 +284,33 @@ Join the registry at nmdp.org/miquela. You could be someone’s match.</p>
                     </div>
                     <div class="text-[13px] font-semibold mb-1 like-count">512.980 lượt thích</div>
                     
-                    <!-- 👇 SỬA CAPTION BÀI 3 (CỘT 2) Ở ĐÂY 👇 -->
+                    <!-- 👇 SỬA CAPTION BÀI 3 Ở ĐÂY 👇 -->
                     <div class="text-[13px] mb-1">
-                        <span class="font-semibold mr-1">lilmiquela</span>Parisian diaries 🥐🎨 Thành phố này thực sự biết cách đánh cắp trái tim.
+                        <span class="font-semibold mr-1">esther.olofsson</span>
+                        <p>Buddies! ✨ Thanks @diederik_verbakel for making my life a bit more colourful and extraordinair!
+
+#virtualinfluencer #virtualgirl #rotterdam #buddies #buddy #colourful #extraordinair #estherolofssonexplores #instafashion #fashiondesigner #fashionicon</p>
                     </div>
 
-                    <!-- 👇 SỬA BÌNH LUẬN BÀI 3 (CỘT 2) Ở ĐÂY 👇 -->
+                    <!-- 👇 SỬA BÌNH LUẬN BÀI 3 Ở ĐÂY 👇 -->
                     <div class="comments-list text-[13px] space-y-1 mt-2 text-gray-300">
                         <div><span class="font-semibold mr-1 text-white">paris_love</span>Đẹp quá chừng!!</div>
                     </div>
-
                 </div>
                 <form class="comment-form flex items-center px-3 py-2 mt-2">
-                    <img src="./avatar.png" class="w-6 h-6 rounded-full mr-3 bg-gray-800" alt="My avatar" onerror="this.src='https://ui-avatars.com/api/?name=U&background=555&color=fff'">
+                    <img src="avatar.png" class="w-6 h-6 rounded-full mr-3 bg-gray-800" alt="My avatar" onerror="this.src='https://ui-avatars.com/api/?name=U&background=555&color=fff'">
                     <input type="text" placeholder="Thêm bình luận..." class="flex-1 outline-none text-[13px] bg-transparent text-white placeholder-gray-500 comment-input">
                     <button type="submit" class="font-semibold text-[13px] text-blue-800 ml-2 cursor-not-allowed submit-btn transition-colors" disabled>Đăng</button>
                 </form>
             </article>
 
-            <!-- BÀI ĐĂNG 4: VIDEO -->
+            <!-- BÀI ĐĂNG 4: 1 VIDEO -->
             <article class="border-b border-gray-800 pb-3 mt-1">
                 <div class="flex items-center justify-between p-3">
                     <div class="flex items-center space-x-3 cursor-pointer">
-                        <img src="./avatar.png" alt="Avatar" class="w-8 h-8 rounded-full object-cover border border-gray-800 bg-gray-800" onerror="this.src='https://ui-avatars.com/api/?name=Lil+Miquela&background=333&color=fff'" />
+                        <img src="avatar esther.png" alt="Avatar" class="w-8 h-8 rounded-full object-cover border border-gray-800 bg-gray-800" onerror="this.src='https://ui-avatars.com/api/?name=Lil+Miquela&background=333&color=fff'" />
                         <div class="flex flex-col">
-                            <!-- Đã thêm TÍCH XANH -->
+                            <!-- TÍCH XANH -->
                             <div class="flex items-center">
                                 <span class="font-semibold text-sm mr-1 text-white">lilmiquela</span>
                                 <svg aria-label="Đã xác minh" fill="#0095F6" height="12" viewBox="0 0 40 40" width="12"><path d="M19.998 3.094 14.638 0l-2.972 5.15H5.432v6.354L0 14.64 3.094 20 0 25.359l5.432 3.137v5.905h5.975L14.638 40l5.36-3.094L25.358 40l3.232-5.6h6.162v-6.01L40 25.359 36.905 20 40 14.641l-5.248-3.03v-6.46h-6.419L25.358 0l-5.36 3.094Zm7.415 11.225 2.254 2.287-11.43 11.5-6.835-6.93 2.244-2.258 4.587 4.581 9.18-9.18Z" fill-rule="evenodd"></path></svg>
@@ -511,11 +321,14 @@ Join the registry at nmdp.org/miquela. You could be someone’s match.</p>
                     <button class="text-gray-400 font-bold">...</button>
                 </div>
                 
+                <!-- 1 VIDEO LOCAL -->
                 <div class="w-full aspect-square relative bg-gray-900 flex justify-center items-center overflow-hidden">
                     <video class="w-full h-full object-cover" autoplay loop muted playsinline>
-                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        <!-- 👇 SỬA TÊN FILE VIDEO MP4 Ở ĐÂY 👇 -->
+                        <source src="esther 4.mp4" type="video/mp4">
                         Trình duyệt của bạn không hỗ trợ thẻ video.
                     </video>
+                    <!-- Icon Video ở góc (Giúp user biết đây là video) -->
                     <div class="absolute top-3 right-3 text-white drop-shadow-md bg-black/30 p-1.5 rounded-full">
                         <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
                     </div>
@@ -532,16 +345,15 @@ Join the registry at nmdp.org/miquela. You could be someone’s match.</p>
                     </div>
                     <div class="text-[13px] font-semibold mb-1 like-count">892.401 lượt thích</div>
                     
-                    <!-- 👇 SỬA CAPTION BÀI 4 (CỘT 2) Ở ĐÂY 👇 -->
+                    <!-- 👇 SỬA CAPTION BÀI 4 Ở ĐÂY 👇 -->
                     <div class="text-[13px] mb-1">
                         <span class="font-semibold mr-1">lilmiquela</span>New York vibes! Cảm nhận nhịp đập của thành phố không bao giờ ngủ 🗽🎬 #NYC
                     </div>
 
-                    <!-- 👇 SỬA BÌNH LUẬN BÀI 4 (CỘT 2) Ở ĐÂY 👇 -->
+                    <!-- 👇 SỬA BÌNH LUẬN BÀI 4 Ở ĐÂY 👇 -->
                     <div class="comments-list text-[13px] space-y-1 mt-2 text-gray-300">
                         <div><span class="font-semibold mr-1 text-white">newyork_fan</span>Hay quá!</div>
                     </div>
-
                 </div>
                 <form class="comment-form flex items-center px-3 py-2 mt-2">
                     <img src="./avatar.png" class="w-6 h-6 rounded-full mr-3 bg-gray-800" alt="My avatar" onerror="this.src='https://ui-avatars.com/api/?name=U&background=555&color=fff'">
@@ -549,6 +361,7 @@ Join the registry at nmdp.org/miquela. You could be someone’s match.</p>
                     <button type="submit" class="font-semibold text-[13px] text-blue-800 ml-2 cursor-not-allowed submit-btn transition-colors" disabled>Đăng</button>
                 </form>
             </article>
+
         </main>
 
         <nav class="sticky bottom-0 flex-shrink-0 w-full bg-black border-t border-gray-800 flex justify-between items-center px-6 py-3 z-50 h-[50px]">
@@ -559,11 +372,13 @@ Join the registry at nmdp.org/miquela. You could be someone’s match.</p>
         </nav>
     </div>
 
+    <!-- SCRIPT CHUNG -->
     <script>
         function initInstagramPhone(containerId) {
             const phone = document.getElementById(containerId);
             if (!phone) return;
 
+            // Xử lý logic Carousel
             const carousels = phone.querySelectorAll('.carousel-container');
             carousels.forEach(container => {
                 const track = container.querySelector('.carousel-track');
@@ -578,9 +393,11 @@ Join the registry at nmdp.org/miquela. You could be someone’s match.</p>
 
                 const updateCarousel = () => {
                     track.style.transform = `translateX(-${currentIndex * 100}%)`;
-
-                    prevBtn.className = `carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full border border-white/20 drop-shadow-md ${currentIndex === 0 ? 'fade-out' : 'fade-in'}`;
-                    nextBtn.className = `carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full border border-white/20 drop-shadow-md ${currentIndex === slideCount - 1 ? 'fade-out' : 'fade-in'}`;
+                    
+                    if (slideCount > 1) {
+                        prevBtn.className = `carousel-prev absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full border border-white/20 drop-shadow-md ${currentIndex === 0 ? 'fade-out' : 'fade-in'}`;
+                        nextBtn.className = `carousel-next absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 text-white p-1.5 rounded-full border border-white/20 drop-shadow-md ${currentIndex === slideCount - 1 ? 'fade-out' : 'fade-in'}`;
+                    }
 
                     dots.forEach((dot, idx) => {
                         if (idx === currentIndex) {
@@ -606,6 +423,7 @@ Join the registry at nmdp.org/miquela. You could be someone’s match.</p>
                 });
             });
 
+            // Xử lý nút Thả tim
             const likeBtns = phone.querySelectorAll('.like-btn');
             likeBtns.forEach(btn => {
                 btn.addEventListener('click', function() {
@@ -638,6 +456,7 @@ Join the registry at nmdp.org/miquela. You could be someone’s match.</p>
                 });
             });
 
+            // Xử lý gửi bình luận
             const commentForms = phone.querySelectorAll('.comment-form');
             commentForms.forEach(form => {
                 const input = form.querySelector('.comment-input');
