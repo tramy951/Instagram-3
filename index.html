@@ -30,7 +30,6 @@
         .fade-out { opacity: 0; pointer-events: none; transition: opacity 0.2s; }
     </style>
 </head>
-<!-- Cấu trúc cuộn ngang trên Mobile, Căn giữa trên Desktop -->
 <body class="flex w-full h-screen bg-gray-900 overflow-x-auto snap-x snap-mandatory md:justify-center items-center gap-4 px-4 no-scrollbar">
 
     <!-- ============================================== -->
@@ -56,7 +55,7 @@
 
         <!-- NỘI DUNG CUỘN (POSTS) -->
         <main class="flex-1 w-full bg-black">
-            <!-- BÀI ĐĂNG 1: TOKYO -->
+            <!-- BÀI ĐĂNG 1: TOKYO (Ảnh Carousel) -->
             <article class="border-b border-gray-800 pb-3">
                 <div class="flex items-center justify-between p-3">
                     <div class="flex items-center space-x-3 cursor-pointer">
@@ -110,7 +109,7 @@
                 </form>
             </article>
 
-            <!-- BÀI ĐĂNG 2: BALI -->
+            <!-- BÀI ĐĂNG 2: BALI (Ảnh Đơn) -->
             <article class="border-b border-gray-800 pb-3 mt-1">
                 <div class="flex items-center justify-between p-3">
                     <div class="flex items-center space-x-3 cursor-pointer">
@@ -143,7 +142,7 @@
                 </form>
             </article>
 
-            <!-- BÀI ĐĂNG 3: PARIS -->
+            <!-- BÀI ĐĂNG 3: PARIS (Ảnh Carousel) -->
             <article class="border-b border-gray-800 pb-3 mt-1">
                 <div class="flex items-center justify-between p-3">
                     <div class="flex items-center space-x-3 cursor-pointer">
@@ -172,7 +171,6 @@
                         <div class="dot h-1.5 w-1.5 bg-white/50 rounded-full transition-all"></div>
                     </div>
                 </div>
-                <!-- Actions -->
                 <div class="px-3 pt-3">
                     <div class="flex items-center justify-between pb-2">
                         <div class="flex items-center space-x-4">
@@ -182,6 +180,51 @@
                     </div>
                     <div class="text-[13px] font-semibold mb-1 like-count">512.980 lượt thích</div>
                     <div class="text-[13px] mb-1"><span class="font-semibold mr-1">lilmiquela</span>Parisian diaries 🥐🎨 Thành phố này thực sự biết cách đánh cắp trái tim.</div>
+                    <div class="comments-list text-[13px] space-y-1 mt-2 text-gray-300"></div>
+                </div>
+                <form class="comment-form flex items-center px-3 py-2 mt-2">
+                    <img src="./avatar.png" class="w-6 h-6 rounded-full mr-3 bg-gray-800" alt="My avatar" onerror="this.src='https://ui-avatars.com/api/?name=U&background=555&color=fff'">
+                    <input type="text" placeholder="Thêm bình luận..." class="flex-1 outline-none text-[13px] bg-transparent text-white placeholder-gray-500 comment-input">
+                    <button type="submit" class="font-semibold text-[13px] text-blue-800 ml-2 cursor-not-allowed submit-btn transition-colors" disabled>Đăng</button>
+                </form>
+            </article>
+
+            <!-- BÀI ĐĂNG 4: VIDEO -->
+            <article class="border-b border-gray-800 pb-3 mt-1">
+                <div class="flex items-center justify-between p-3">
+                    <div class="flex items-center space-x-3 cursor-pointer">
+                        <img src="./avatar.png" alt="Avatar" class="w-8 h-8 rounded-full object-cover border border-gray-800 bg-gray-800" onerror="this.src='https://ui-avatars.com/api/?name=Lil+Miquela&background=333&color=fff'" />
+                        <div class="flex flex-col">
+                            <span class="font-semibold text-sm text-white">lilmiquela</span>
+                            <span class="text-[11px] text-gray-400">New York, USA</span>
+                        </div>
+                    </div>
+                    <button class="text-gray-400 font-bold">...</button>
+                </div>
+                
+                <!-- Video Container -->
+                <div class="w-full aspect-square relative bg-gray-900 flex justify-center items-center overflow-hidden">
+                    <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ thẻ video.
+                    </video>
+                    <!-- Icon Video ở góc -->
+                    <div class="absolute top-3 right-3 text-white drop-shadow-md bg-black/30 p-1.5 rounded-full">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+                    </div>
+                </div>
+
+                <div class="px-3 pt-3">
+                    <div class="flex items-center justify-between pb-2">
+                        <div class="flex items-center space-x-4">
+                            <button class="like-btn focus:outline-none transition-transform hover:scale-110"><svg class="heart-icon" aria-label="Thích" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button>
+                            <button class="transition-transform hover:scale-110"><svg aria-label="Bình luận" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg></button>
+                            <button class="transition-transform hover:scale-110"><svg aria-label="Chia sẻ" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg></button>
+                        </div>
+                        <button class="transition-transform hover:scale-110"><svg aria-label="Lưu" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg></button>
+                    </div>
+                    <div class="text-[13px] font-semibold mb-1 like-count">892.401 lượt thích</div>
+                    <div class="text-[13px] mb-1"><span class="font-semibold mr-1">lilmiquela</span>New York vibes! Cảm nhận nhịp đập của thành phố không bao giờ ngủ 🗽🎬 #NYC</div>
                     <div class="comments-list text-[13px] space-y-1 mt-2 text-gray-300"></div>
                 </div>
                 <form class="comment-form flex items-center px-3 py-2 mt-2">
@@ -351,6 +394,51 @@
                     <button type="submit" class="font-semibold text-[13px] text-blue-800 ml-2 cursor-not-allowed submit-btn transition-colors" disabled>Đăng</button>
                 </form>
             </article>
+
+            <!-- BÀI ĐĂNG 4: VIDEO -->
+            <article class="border-b border-gray-800 pb-3 mt-1">
+                <div class="flex items-center justify-between p-3">
+                    <div class="flex items-center space-x-3 cursor-pointer">
+                        <img src="./avatar.png" alt="Avatar" class="w-8 h-8 rounded-full object-cover border border-gray-800 bg-gray-800" onerror="this.src='https://ui-avatars.com/api/?name=Lil+Miquela&background=333&color=fff'" />
+                        <div class="flex flex-col">
+                            <span class="font-semibold text-sm text-white">lilmiquela</span>
+                            <span class="text-[11px] text-gray-400">New York, USA</span>
+                        </div>
+                    </div>
+                    <button class="text-gray-400 font-bold">...</button>
+                </div>
+                
+                <!-- Video Container -->
+                <div class="w-full aspect-square relative bg-gray-900 flex justify-center items-center overflow-hidden">
+                    <video class="w-full h-full object-cover" autoplay loop muted playsinline>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ thẻ video.
+                    </video>
+                    <!-- Icon Video ở góc -->
+                    <div class="absolute top-3 right-3 text-white drop-shadow-md bg-black/30 p-1.5 rounded-full">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/></svg>
+                    </div>
+                </div>
+
+                <div class="px-3 pt-3">
+                    <div class="flex items-center justify-between pb-2">
+                        <div class="flex items-center space-x-4">
+                            <button class="like-btn focus:outline-none transition-transform hover:scale-110"><svg class="heart-icon" aria-label="Thích" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg></button>
+                            <button class="transition-transform hover:scale-110"><svg aria-label="Bình luận" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg></button>
+                            <button class="transition-transform hover:scale-110"><svg aria-label="Chia sẻ" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg></button>
+                        </div>
+                        <button class="transition-transform hover:scale-110"><svg aria-label="Lưu" fill="none" stroke="currentColor" height="24" viewBox="0 0 24 24" width="24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg></button>
+                    </div>
+                    <div class="text-[13px] font-semibold mb-1 like-count">892.401 lượt thích</div>
+                    <div class="text-[13px] mb-1"><span class="font-semibold mr-1">lilmiquela</span>New York vibes! Cảm nhận nhịp đập của thành phố không bao giờ ngủ 🗽🎬 #NYC</div>
+                    <div class="comments-list text-[13px] space-y-1 mt-2 text-gray-300"></div>
+                </div>
+                <form class="comment-form flex items-center px-3 py-2 mt-2">
+                    <img src="./avatar.png" class="w-6 h-6 rounded-full mr-3 bg-gray-800" alt="My avatar" onerror="this.src='https://ui-avatars.com/api/?name=U&background=555&color=fff'">
+                    <input type="text" placeholder="Thêm bình luận..." class="flex-1 outline-none text-[13px] bg-transparent text-white placeholder-gray-500 comment-input">
+                    <button type="submit" class="font-semibold text-[13px] text-blue-800 ml-2 cursor-not-allowed submit-btn transition-colors" disabled>Đăng</button>
+                </form>
+            </article>
         </main>
 
         <nav class="sticky bottom-0 flex-shrink-0 w-full bg-black border-t border-gray-800 flex justify-between items-center px-6 py-3 z-50 h-[50px]">
@@ -418,8 +506,7 @@
                     const icon = this.querySelector('.heart-icon');
                     // Icon Trái tim outline (chưa like)
                     const outlinePath = `<path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>`;
-                    // Icon Trái tim filled (đã like) - svg được thiết lập không dùng stroke và dùng fill
-
+                    
                     const isLiked = icon.classList.contains('text-red-500');
                     const post = this.closest('article');
                     const likeCountEl = post.querySelector('.like-count');
@@ -437,7 +524,7 @@
                         icon.classList.add('text-red-500');
                         icon.setAttribute('fill', 'currentColor');
                         icon.setAttribute('stroke', 'none');
-                        icon.innerHTML = outlinePath; // SVG fill the same path naturally when fill="currentColor"
+                        icon.innerHTML = outlinePath; 
                         count++;
 
                         // Kích hoạt animation Pop
